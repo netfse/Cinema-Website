@@ -1,0 +1,89 @@
+body {
+    margin:0;
+    background-color: #333;
+}
+#Menu {
+    margin-left: 85%;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    height:100%;
+}
+.Links {
+    list-style-type: none;
+    display:block;
+    padding: 5%;
+    text-align:center;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    transition: 0.1s;
+}
+#footer a:link{
+    font-size: 25px;
+    transition: 0.1s;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #ddd;
+}
+a:active {
+    text-decoration: none;
+    color: #f3971b;
+} 
+
+.main {
+    padding: 16px;
+    margin-right: 15%;
+    background-color: #292929;
+}
+
+#Header {
+    border-style: solid;
+    border-color:#f3971b;
+    text-align: center;
+    background-color: #353535;
+    background-image: linear-gradient(180deg,#353535,#f3971b);
+}
+
+#Header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #ffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#Header img {
+    width:10em;
+    position:relative;
+    animation-name: icon;
+    animation-duration: 3s; 
+}
+
+@keyframes icon {
+    0%   {left:0px; top:0px;}
+    25%  {left:150px; top:0px;}
+    50%  {left:-150px; top:0px;}
+    75%  {left:150px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+#footer {
+    padding: 5px;
+    border: 1px;
+    background-color: #f3971b;
+    position: relative;
+    text-align: center;
+}
+
+#footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}

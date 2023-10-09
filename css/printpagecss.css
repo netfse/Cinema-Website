@@ -1,0 +1,49 @@
+.OneTicket {
+    margin-top:3%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color: #f3971b;
+    border-radius:15px 50px;
+    background-color: #353535;
+    padding: 10%;
+    color: #ffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+main {
+    background-color: #353535;
+}
+
+input[type="text"] {
+    height: 16px;
+    width: 200px;
+    margin-left: 32px;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+    text-align: right;
+}
+
+#Header {
+    display: none;
+}
+
+#footer {
+    display: none;
+}
+
+@media print {
+    .Ticket_information {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Galaxy Cinema Corporation Limited">
+    <meta name="descrption" content="The large cinema is opened. Come Galaxy Galaxy and Enjoy new 4D movies!">
+    <meta name="keywords" content="Galaxy Cinema, cinema, film, movie">
+    <meta name="viewport" content="width=device-width">
+    <title>
+        Now Showing Page
+    </title>
+    <style type="text/css">
+      @import url("../css/showingpagecss.css");
+      @import url("../css/allpagesdesign.css");
+    </style>
+    <script type="text/javascript" src="../js/movies.js" defer></script>
+    <script type="text/javascript" src="../js/cinemas.js" defer></script>
+    <script type="text/javascript" src="../js/showingpage.js" defer></script>
+</head>
+
+<body>
+  <!--Links to other pages-->
+  <nav id="Menu">
+    <ul class="Links">
+      <li class="Homepage"><a href="Homepage.html">HOME</a></li>
+      <li class="Showingpage"><a href="Showingpage.html">NOW SHOWING</a></li>
+      <li class="Ticketpage"><a href="Ticketpage.html">TICKET</a></li> 
+    </ul>
+  </nav>
+
+  <!--header consists-->
+  <div id="Header" class="main">
+    <img src="../images/Clap-cinema.png" alt="Cinema icon">
+    <h1>Galaxy Cinema</h1>
+  </div>
+
+  <!--Content-->
+
+    <div id="Content" class="main">
+      <!-- A list of movies on show now -->
+      <div id="PageContent">
+        <div id="CinemaSelect">
+          <form action="Ticketpage.html" method="get">
+            <label for="Select_Cinema">Select Cinema: </label>
+            <select id="Select_Cinema" name="Select_Cinema" onchange="GetValuefromSelectedCinema()"> </select>
+          </form>
+        </div>
+        
+        <div id="EachMovie">
+
+        </div>
+        
+        <!-- All cinema locations -->
+
+        <div id="CinemaLocations">
+          <div>
+            <img src="../images/FestivalWalk.png" alt="FestivalWalk map">
+            <span class="inline-block">
+                Galaxy Cinema - Festival Walk<br>
+                Level UG, Festival Walk, 80 Tat Chee Avenue<br>
+                Kowloon Tong
+            </span>
+          </div>
+          <div>
+            <img src="../images/LanghamPlace.png" alt="LanghamPlace map">
+            <span class="inline-block">
+                Galaxy Cinema - Langham Place<br>
+                Level 8-11, Langham Place Mall, 8 Argyle Street<br>
+                Mong Kok
+            </span>
+          </div>
+          <div>
+            <img src="../images/NewTownPlaza.png" alt="NewTownPlaza map">
+            <span class="inline-block">
+                Galaxy Cinema - New Town Plaza<br>
+                Phase 1, New Town Plaza, 18 Sha Tin Centre St<br>
+                Sha Tin
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <div id="footer">
+      <p>
+        Footer: @Copyright of resources belong to corresponding copyright owners
+        <br>- fair use for education purpose | <a href="Homepage.html" class="Homepage" >Home</a> | <a href="Desginpage.html">Design</a> | 
+      </p>
+  </div>
+</body>
+
+</html>

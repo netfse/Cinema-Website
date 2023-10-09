@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Galaxy Cinema Corporation Limited">
+    <meta name="descrption" content="The large cinema is opened. Come Galaxy Galaxy and Enjoy new 4D movies!">
+    <meta name="keywords" content="Galaxy Cinema, cinema, film, movie">
+    <meta name="viewport" content="width=device-width">
+    <title>
+        Ticket Page
+    </title>
+    <style type="text/css">
+        @import url("../css/allpagesdesign.css");
+        @import url("../css/ticketpagecss.css");
+    </style>
+        <script type="text/javascript" src="../js/cinemas.js" defer></script>
+        <script type="text/javascript" src="../js/ticketpage.js" defer></script>
+</head>
+
+<body>
+    <!--Links to other pages-->
+    <nav id="Menu">
+        <ul class="Links">
+            <li class="Homepage"><a href="Homepage.html">HOME</a></li>
+            <li class="Showingpage"><a href="Showingpage.html">NOW SHOWING</a></li>
+            <li class="Ticketpage"><a href="Ticketpage.html">TICKET</a></li> 
+        </ul>
+    </nav>
+
+    <!--header consists-->
+    <div id="Header" class="main">
+        <img src="../images/Clap-cinema.png" alt="Cinema icon">
+        <h1>Galaxy Cinema</h1>
+    </div>
+    <!--Content-->
+    <div id="Content" class="main">
+
+        <!--Select Seats -->
+
+        <div id="SeatContent">
+            <form name="SeatForm" method="get" action="Printpage.html"  onsubmit="return ValidateForm(this);" >
+                <div id="Information">
+                    <span id="showingcinema">Cinema - Not Found</span>
+                    <span id="movie">Movie - Not Found</span>
+                    <span id="datetime">Datetime - Not Found </span>
+                    <span id="house">House - Not Found </span> 
+                </div>
+                <div id="SeatPlan">
+                    <span></span>
+                    <div class="Seat">
+                        <span id="Screen" class="SeatRow">SCREEN</span> <!--select id="mySelect" onchange="myFunction()"-->
+                        <span class="SeatRow">Row A</span>
+                        <span id = "A1" class="clickable" onclick="GetSeat('A1')">Seat 1</span>
+                        <span id = "A2" class="clickable" onclick="GetSeat('A2')">Seat 2</span>
+                        <span id = "A3" class="clickable" onclick="GetSeat('A3')">Seat 3</span>
+                        <span id = "A4" class="clickable" onclick="GetSeat('A4')">Seat 4</span>
+                        <span class="SeatRow">Row B</span>
+                        <span id = "B1" class="clickable" onclick="GetSeat('B1')">Seat 1</span>
+                        <span id = "B2" class="clickable" onclick="GetSeat('B2')">Seat 2</span>
+                        <span id = "B3" class="clickable" onclick="GetSeat('B3')">Seat 3</span>
+                        <span id = "B4" class="clickable" onclick="GetSeat('B4')">Seat 4</span>
+                        <span class="SeatRow">Row C</span>
+                        <span id = "C1" class="clickable" onclick="GetSeat('C1')">Seat 1</span>
+                        <span id = "C2" class="clickable" onclick="GetSeat('C2')">Seat 2</span>
+                        <span id = "C3" class="clickable" onclick="GetSeat('C3')">Seat 3</span>
+                        <span id = "C4" class="clickable" onclick="GetSeat('C4')">Seat 4</span>
+                        <span class="SeatRow">Row D</span>
+                        <span id = "D1" class="clickable" onclick="GetSeat('D1')">Seat 1</span>
+                        <span id = "D2" class="clickable" onclick="GetSeat('D2')">Seat 2</span>
+                        <span id = "D3" class="clickable" onclick="GetSeat('D3')">Seat 3</span>
+                        <span id = "D4" class="clickable" onclick="GetSeat('D4')">Seat 4</span>
+                        <span class="SeatRow">Row E</span>
+                        <span id = "E1" class="clickable" onclick="GetSeat('E1')">Seat 1</span>
+                        <span id = "E2" class="clickable" onclick="GetSeat('E2')">Seat 2</span>
+                        <span id = "E3" class="clickable" onclick="GetSeat('E3')">Seat 3</span>
+                        <span id = "E4" class="clickable" onclick="GetSeat('E4')">Seat 4</span>
+                        <span class="SeatRow">Row F</span>
+                        <span id = "F1" class="clickable" onclick="GetSeat('F1')">Seat 1</span>
+                        <span id = "F2" class="clickable" onclick="GetSeat('F2')">Seat 2</span>
+                        <span id = "F3" class="clickable" onclick="GetSeat('F3')">Seat 3</span>
+                        <span id = "F4" class="clickable" onclick="GetSeat('F4')">Seat 4</span>                                                                                               
+                    </div>      
+                </div>
+                <div id="Data">
+                    <input id = "SendCinemadata" name="SendCinemadata" type="hidden" value = "" >
+                    <input id = "SendMoviedata" name="SendMoviedata" type="hidden" value = "" >
+                    <input id = "SendHousedata" name="SendHousedata" type="hidden" value = "" >
+                    <input id = "SendDatedata" name="SendDatedata" type="hidden" value = "" >
+                    <input id = "SendSeatdata" name="SendSeatdata" type="hidden" value = "" >
+                </div>
+                
+                <div id="SelectedSeatswiththeconfirmbutton">
+                    <div>
+                    <p>
+                        Seat Booked
+                    </p>
+                    <span class="displayselectedseat"></span>
+                    </div>
+                    <button type="submit">Confirm</button>
+                    <button type="reset" onclick="ClearSelectedSeats()">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  <!-- Footer -->
+  <div id="footer">
+    <p>
+      Footer: @Copyright of resources belong to corresponding copyright owners
+      <br>- fair use for education purpose | <a href="Homepage.html" class="Homepage" >Home</a> | <a href="Desginpage.html">Design</a> | 
+    </p>
+  </div>
+</body>
+
+</html>

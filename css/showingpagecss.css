@@ -1,0 +1,104 @@
+.Showingpage {
+    text-decoration: none;
+    pointer-events:none;
+}
+
+#CinemaSelect {
+    margin-top:3%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color: #f3971b;
+    border-radius:15px 50px;
+    background-color: #353535;
+    padding: 5%;
+    font-size: 25px;
+    color: #ffff;
+    text-align: center;
+}
+
+#CinemaSelect Select{
+    height: 35px;
+    width: 350px;
+    margin-left: 32px;
+}
+
+.ListofMoviesforthatcinema {
+    border-style: solid;
+    border-color: #f3971b;
+    margin-top:3%;
+    padding: 5%;
+    border-radius:15px 50px;
+    background-color: #353535;
+    text-align:center;
+}
+
+.ListofMoviesforthatcinema img {
+    border-style: solid;
+    border-color: #f3971b;
+    width:200px;
+    height:140px;
+}
+
+#CinemaLocations {
+    border-color: #f3971b;
+    border-style: solid;
+    margin-top:3%;
+    padding: 10%;
+    border-radius:15px 50px;
+    
+    background-color: #353535;
+}
+
+#CinemaLocations img {
+    width:30%;
+    height:30%;
+    border-style: solid;
+    border-color: #f3971b;
+}
+
+#CinemaLocations span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 250px;
+    margin-left: 32px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+select {
+    height: 35px;
+    width: 250px;
+    margin-left: 32px;
+}
+
+button {
+    height: 26px;
+    width: 250px;
+    margin-left: 32px;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #f3971b;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
